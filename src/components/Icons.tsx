@@ -262,3 +262,82 @@ export function TrophyIcon({ className = "w-5 h-5" }: { className?: string }) {
     </svg>
   );
 }
+
+/**
+ * SAIDE GYM Official Brand Logo (The Olympic Hex Plate "S")
+ * Represents iron weight plates, powerlifting, and athletic strength.
+ * Minimalist, 2-color scalable SVG.
+ */
+export function SaideGymLogo({
+  className = "w-6 h-6",
+  variant = "duo",
+}: {
+  className?: string;
+  variant?: "duo" | "mono";
+}) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Logo SAIDE GYM"
+    >
+      {/* Hexagonal Olympic Iron Plate Base */}
+      <path
+        d="M16 2L29 9.5V22.5L16 30L3 22.5V9.5L16 2Z"
+        fill={variant === "duo" ? "#DC2626" : "currentColor"}
+      />
+      {/* Inner Beveled Plate Shadow */}
+      <path
+        d="M16 4.5L26.5 10.5V21.5L16 27.5L5.5 21.5V10.5L16 4.5Z"
+        fill={variant === "duo" ? "#991B1B" : "rgba(0,0,0,0.25)"}
+      />
+      {/* Chiseled Athletic S Monogram */}
+      <path
+        d="M22 8H12L10 13H18.5C19.05 13 19.5 13.45 19.5 14V14.5C19.5 15.05 19.05 15.5 18.5 15.5H13C11.34 15.5 10 16.84 10 18.5V20C10 21.66 11.34 23 13 23H23L25 18H16.5C15.95 18 15.5 17.55 15.5 17V16.5C15.5 15.95 15.95 15.5 16.5 15.5H22C23.66 15.5 25 14.16 25 12.5V11C25 9.34 23.66 8 22 8Z"
+        fill={variant === "duo" ? "#FFFFFF" : "#09090B"}
+      />
+      {/* Top & Bottom Olympic Barbell Pin Holes */}
+      <circle cx="16" cy="6.75" r="1.1" fill={variant === "duo" ? "#FFFFFF" : "#09090B"} />
+      <circle cx="16" cy="25.25" r="1.1" fill={variant === "duo" ? "#FFFFFF" : "#09090B"} />
+    </svg>
+  );
+}
+
+/**
+ * SAIDE GYM Freestanding Monogram (Interlocking Power Plates)
+ * Minimalist geometric glyph forming an S from two heavy interlocking weights.
+ */
+export function SaideGymMark({
+  className = "w-6 h-6",
+  color1 = "#EF4444",
+  color2 = "#FFFFFF",
+}: {
+  className?: string;
+  color1?: string;
+  color2?: string;
+}) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-label="Mark SAIDE GYM"
+    >
+      {/* Upper Heavy Plate (Crimson Red) */}
+      <path
+        d="M7 6H23C24.6569 6 26 7.34315 26 9V11C26 12.6569 24.6569 14 23 14H16L21 18H15L9 13.5C7.8 12.5 7 11.2 7 9.8V6Z"
+        fill={color1}
+      />
+      {/* Lower Heavy Plate (Crisp White) */}
+      <path
+        d="M25 26H9C7.34315 26 6 24.6569 6 23V21C6 19.3431 7.34315 18 9 18H16L11 14H17L23 18.5C24.2 19.5 25 20.8 25 22.2V26Z"
+        fill={color2}
+      />
+      {/* Center Core Accent */}
+      <circle cx="16" cy="16" r="1.75" fill={color1} />
+    </svg>
+  );
+}

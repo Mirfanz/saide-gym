@@ -10,19 +10,19 @@ export default function StatsBar() {
       desc: "38+ Ulasan Member",
     },
     {
-      icon: <ClockIcon className="w-5 h-5 text-emerald-400" />,
+      icon: <ClockIcon className="w-5 h-5 text-red-400" />,
       value: "08:00 - 22:00",
       label: "Buka Setiap Hari",
       desc: "Senin s/d Minggu",
     },
     {
-      icon: <DumbbellIcon className="w-5 h-5 text-lime-400" />,
+      icon: <DumbbellIcon className="w-5 h-5 text-rose-400" />,
       value: "Rp 15.000",
       label: "Visit Harian Terjangkau",
       desc: "Bebas Pakai Semua Alat",
     },
     {
-      icon: <ShieldIcon className="w-5 h-5 text-teal-400" />,
+      icon: <ShieldIcon className="w-5 h-5 text-red-400" />,
       value: "100% Ramah",
       label: "Beginner Friendly",
       desc: "Coach Siap Membimbing",

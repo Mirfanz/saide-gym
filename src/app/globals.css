@@ -6,7 +6,8 @@
   --foreground: #f4f4f5;
   --muted: #18181b;
   --muted-foreground: #a1a1aa;
-  --accent-lime: #22c55e;
+  --accent-red: #ef4444;
+  --accent-rose: #f43f5e;
   --accent-orange: #f97316;
 }
 
@@ -15,7 +16,8 @@
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  --color-accent-lime: var(--accent-lime);
+  --color-accent-red: var(--accent-red);
+  --color-accent-rose: var(--accent-rose);
   --color-accent-orange: var(--accent-orange);
   --font-sans:
     system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -51,8 +53,8 @@ body {
 }
 
 /* Subtle glow utilities */
-.glow-lime {
-  box-shadow: 0 0 35px -5px rgba(34, 197, 94, 0.25);
+.glow-red {
+  box-shadow: 0 0 35px -5px rgba(239, 68, 68, 0.3);
 }
 
 .glow-orange {
