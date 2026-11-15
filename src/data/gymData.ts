@@ -49,12 +49,13 @@ export const GYM_INFO = {
     "Fasilitas lengkap, suasana nyaman & bersih, ramah pemula, dan bimbingan coach berpengalaman dengan tarif paling terjangkau di Karawang.",
   phone: "081284182622",
   phoneIntl: "6281284182622",
-  address: "Jl. Kalikalapa No. RT 06/03, Desa Sukaluyu, Kec. Telukjambe Timur, Kab. Karawang, Jawa Barat 41361",
+  address:
+    "Jl. Kalikalapa No. RT 06/03, Desa Sukaluyu, Kec. Telukjambe Timur, Kab. Karawang, Jawa Barat 41361",
   addressShort: "Sukaluyu, Telukjambe Timur, Karawang",
   hours: "Setiap Hari (Senin – Minggu) 08:00 – 22:00 WIB",
   openHour: 8,
   closeHour: 22,
-  mapsUrl: "https://share.google/d1almTyksNyb19Qug",
+  mapsUrl: "https://maps.app.goo.gl/D2A28zZ6JGEo92Xg9",
   mapsEmbedQuery: "Saide+Gym+Karawang+Sukaluyu",
   instagramUrl: "https://www.instagram.com/saidegym",
   instagramHandle: "@saidegym",
@@ -72,7 +73,8 @@ export const MEMBERSHIP_PLANS: PricingPlan[] = [
     price: 15000,
     priceDisplay: "Rp 15.000",
     period: "per kedatangan",
-    description: "Pilihan fleksibel tanpa ikatan untuk Anda yang ingin coba suasana atau berolahraga sewaktu-waktu.",
+    description:
+      "Pilihan fleksibel tanpa ikatan untuk Anda yang ingin coba suasana atau berolahraga sewaktu-waktu.",
     features: [
       "Akses penuh seluruh alat gym",
       "Bebas pakai fasilitas loker",
@@ -81,7 +83,8 @@ export const MEMBERSHIP_PLANS: PricingPlan[] = [
       "Cocok untuk pemula & visitor luar kota",
     ],
     ctaText: "Mulai Latihan Hari Ini",
-    waMessage: "Halo Admin Saide Gym, saya mau tanya untuk visit latihan harian (15k) hari ini. Buka sampai jam berapa ya?",
+    waMessage:
+      "Halo Admin Saide Gym, saya mau tanya untuk visit latihan harian (15k) hari ini. Buka sampai jam berapa ya?",
   },
   {
     id: "member-1m",
@@ -89,7 +92,8 @@ export const MEMBERSHIP_PLANS: PricingPlan[] = [
     price: 115000,
     priceDisplay: "Rp 115.000",
     period: "per bulan",
-    description: "Paket standar bulanan untuk membangun konsistensi latihan rutin dengan biaya sangat hemat.",
+    description:
+      "Paket standar bulanan untuk membangun konsistensi latihan rutin dengan biaya sangat hemat.",
     features: [
       "Akses UNLIMITED 30 hari penuh",
       "Bebas datang kapan saja (08:00 - 22:00)",
@@ -99,7 +103,8 @@ export const MEMBERSHIP_PLANS: PricingPlan[] = [
       "Tanpa biaya admin / perpanjangan tersembunyi",
     ],
     ctaText: "Daftar Member 1 Bulan",
-    waMessage: "Halo Admin Saide Gym, saya ingin mendaftar Member 1 Bulan (Rp 115.000). Bagaimana prosedur pendaftarannya?",
+    waMessage:
+      "Halo Admin Saide Gym, saya ingin mendaftar Member 1 Bulan (Rp 115.000). Bagaimana prosedur pendaftarannya?",
   },
   {
     id: "member-3m",
@@ -111,7 +116,8 @@ export const MEMBERSHIP_PLANS: PricingPlan[] = [
     savings: "Hemat Rp 15.000 (Rp 110.000/bln)",
     badge: "Paling Populer",
     popular: true,
-    description: "Paling direkomendasikan untuk target transformasi tubuh nyata dan pembentukan kebiasaan hidup sehat.",
+    description:
+      "Paling direkomendasikan untuk target transformasi tubuh nyata dan pembentukan kebiasaan hidup sehat.",
     features: [
       "Akses UNLIMITED 90 hari penuh",
       "Hemat Rp 15.000 dibanding bulanan",
@@ -121,7 +127,8 @@ export const MEMBERSHIP_PLANS: PricingPlan[] = [
       "Komunitas olahraga yang suportif",
     ],
     ctaText: "Pilih Paket 3 Bulan",
-    waMessage: "Halo Admin Saide Gym, saya tertarik mendaftar Paket Promo Member 3 Bulan (Rp 330.000). Mohon info pendaftarannya.",
+    waMessage:
+      "Halo Admin Saide Gym, saya tertarik mendaftar Paket Promo Member 3 Bulan (Rp 330.000). Mohon info pendaftarannya.",
   },
   {
     id: "member-6m",
@@ -132,7 +139,8 @@ export const MEMBERSHIP_PLANS: PricingPlan[] = [
     originalPrice: "Rp 690.000",
     savings: "Hemat Rp 40.000 (~Rp 108.000/bln)",
     badge: "Super Hemat",
-    description: "Pilihan terbaik untuk Anda yang berkomitmen serius dalam jangka panjang dengan harga termurah.",
+    description:
+      "Pilihan terbaik untuk Anda yang berkomitmen serius dalam jangka panjang dengan harga termurah.",
     features: [
       "Akses UNLIMITED 180 hari penuh",
       "Tarif paling hemat per bulannya",
@@ -142,7 +150,8 @@ export const MEMBERSHIP_PLANS: PricingPlan[] = [
       "Investasi kebugaran terbaik",
     ],
     ctaText: "Ambil Paket 6 Bulan",
-    waMessage: "Halo Admin Saide Gym, saya ingin mengambil Paket Member 6 Bulan (Rp 650.000). Apakah bisa dibantu prosesnya?",
+    waMessage:
+      "Halo Admin Saide Gym, saya ingin mengambil Paket Member 6 Bulan (Rp 650.000). Apakah bisa dibantu prosesnya?",
   },
 ];
 
@@ -154,7 +163,8 @@ export const PT_PLANS: PricingPlan[] = [
     priceDisplay: "Rp 80.000",
     period: "1 sesi privat",
     badge: "Termasuk Free Visit",
-    description: "Coba pengalaman didampingi trainer privat untuk koreksi teknik, postur, dan pengenalan gerakan aman.",
+    description:
+      "Coba pengalaman didampingi trainer privat untuk koreksi teknik, postur, dan pengenalan gerakan aman.",
     features: [
       "1x Sesi Privat (1-on-1) intensif",
       "FREE Biaya Visit Harian",
@@ -163,7 +173,8 @@ export const PT_PLANS: PricingPlan[] = [
       "Penjelasan fungsi alat yang tepat",
     ],
     ctaText: "Coba Sesi PT",
-    waMessage: "Halo Coach Saide Gym, saya mau booking 1 Sesi Personal Trainer (Rp 80.000 termasuk free visit). Jadwal kosong kapan ya?",
+    waMessage:
+      "Halo Coach Saide Gym, saya mau booking 1 Sesi Personal Trainer (Rp 80.000 termasuk free visit). Jadwal kosong kapan ya?",
   },
   {
     id: "pt-5",
@@ -172,7 +183,8 @@ export const PT_PLANS: PricingPlan[] = [
     priceDisplay: "Rp 400.000",
     period: "5 sesi privat",
     badge: "FREE 1 Bulan Member",
-    description: "Pendampingan terarah untuk pemula yang ingin memahami program latihan dasar dengan benar.",
+    description:
+      "Pendampingan terarah untuk pemula yang ingin memahami program latihan dasar dengan benar.",
     features: [
       "5x Sesi Privat (1-on-1) terarah",
       "FREE 1 Bulan Membership Gym (Hemat Rp 115k)",
@@ -181,7 +193,8 @@ export const PT_PLANS: PricingPlan[] = [
       "Konsultasi nutrisi & pola makan dasar",
     ],
     ctaText: "Pilih 5 Sesi PT",
-    waMessage: "Halo Admin & Coach Saide Gym, saya ingin mendaftar paket 5 Sesi PT + Free 1 Bulan Member (Rp 400.000). Mohon infonya.",
+    waMessage:
+      "Halo Admin & Coach Saide Gym, saya ingin mendaftar paket 5 Sesi PT + Free 1 Bulan Member (Rp 400.000). Mohon infonya.",
   },
   {
     id: "pt-10",
@@ -192,7 +205,8 @@ export const PT_PLANS: PricingPlan[] = [
     badge: "Rekomendasi Coach",
     popular: true,
     savings: "FREE 1 Bulan Member",
-    description: "Paket paling ideal untuk akselerasi hasil: penurunan lemak (*fat loss*) atau peningkatan massa otot (*muscle gain*).",
+    description:
+      "Paket paling ideal untuk akselerasi hasil: penurunan lemak (*fat loss*) atau peningkatan massa otot (*muscle gain*).",
     features: [
       "10x Sesi Privat (1-on-1) terstruktur",
       "FREE 1 Bulan Membership Gym (Hemat Rp 115k)",
@@ -202,7 +216,8 @@ export const PT_PLANS: PricingPlan[] = [
       "Motivasi & push limit yang aman",
     ],
     ctaText: "Pilih 10 Sesi PT",
-    waMessage: "Halo Coach Saide Gym, saya tertarik mengambil paket 10 Sesi PT + Free 1 Bulan Member (Rp 700.000). Boleh info trainer yang ready?",
+    waMessage:
+      "Halo Coach Saide Gym, saya tertarik mengambil paket 10 Sesi PT + Free 1 Bulan Member (Rp 700.000). Boleh info trainer yang ready?",
   },
   {
     id: "pt-15",
@@ -212,7 +227,8 @@ export const PT_PLANS: PricingPlan[] = [
     period: "15 sesi privat",
     badge: "Best Deal",
     savings: "FREE 1 Bulan Member",
-    description: "Bimbingan mendalam hingga Anda menguasai seluruh teknik dan mandiri dalam berolahraga.",
+    description:
+      "Bimbingan mendalam hingga Anda menguasai seluruh teknik dan mandiri dalam berolahraga.",
     features: [
       "15x Sesi Privat (1-on-1) intensif",
       "FREE 1 Bulan Membership Gym (Hemat Rp 115k)",
@@ -221,7 +237,8 @@ export const PT_PLANS: PricingPlan[] = [
       "Dukungan konsultasi harian via WhatsApp",
     ],
     ctaText: "Pilih 15 Sesi PT",
-    waMessage: "Halo Admin Saide Gym, saya ingin mendaftar paket 15 Sesi PT + Free 1 Bulan Member (Rp 850.000). Bagaimana jadwal latihannya?",
+    waMessage:
+      "Halo Admin Saide Gym, saya ingin mendaftar paket 15 Sesi PT + Free 1 Bulan Member (Rp 850.000). Bagaimana jadwal latihannya?",
   },
   {
     id: "pt-30",
@@ -231,7 +248,8 @@ export const PT_PLANS: PricingPlan[] = [
     period: "30 sesi privat",
     badge: "FREE 2 Bulan Member",
     savings: "Hemat Ekstra + Free 2 Bulan",
-    description: "Pendampingan transformasi tubuh menyeluruh dengan garansi pendampingan konsisten selama berbulan-bulan.",
+    description:
+      "Pendampingan transformasi tubuh menyeluruh dengan garansi pendampingan konsisten selama berbulan-bulan.",
     features: [
       "30x Sesi Privat (1-on-1) komprehensif",
       "FREE 2 Bulan Membership Gym (Hemat Rp 230k)",
@@ -241,7 +259,8 @@ export const PT_PLANS: PricingPlan[] = [
       "Prioritas booking jadwal coach",
     ],
     ctaText: "Pilih 30 Sesi PT",
-    waMessage: "Halo Coach Saide Gym, saya ingin berkomitmen di paket 30 Sesi PT + Free 2 Bulan Member (Rp 1.650.000). Mohon panduan konsultasi awalnya.",
+    waMessage:
+      "Halo Coach Saide Gym, saya ingin berkomitmen di paket 30 Sesi PT + Free 2 Bulan Member (Rp 1.650.000). Mohon panduan konsultasi awalnya.",
   },
 ];
 
@@ -260,7 +279,8 @@ export const FACILITIES: Facility[] = [
     ],
     icon: "dumbbell",
     tag: "Lengkap & Kokoh",
-    image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "cable-machines",
@@ -277,7 +297,8 @@ export const FACILITIES: Facility[] = [
     ],
     icon: "cables",
     tag: "Aman untuk Pemula",
-    image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "cardio-zone",
@@ -292,7 +313,8 @@ export const FACILITIES: Facility[] = [
     ],
     icon: "flame",
     tag: "Pembakaran Kalori",
-    image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=800&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "coach-support",
@@ -308,7 +330,8 @@ export const FACILITIES: Facility[] = [
     ],
     icon: "users",
     tag: "Friendly Coach",
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: "amenities",
@@ -324,7 +347,8 @@ export const FACILITIES: Facility[] = [
     ],
     icon: "shield",
     tag: "Bersih & Nyaman",
-    image: "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=800&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=800&auto=format&fit=crop",
   },
 ];
 
@@ -386,7 +410,8 @@ export const FAQS: FaqItem[] = [
       "Tentu saja! Saide Gym sangat ramah bagi pemula. Instruktur dan coach kami siap menunjukkan cara menggunakan alat, mengatur posisi duduk/beban, serta memberikan tips form gerakan yang aman agar terhindar dari cedera.",
   },
   {
-    question: "Apakah ada biaya pendaftaran atau biaya registrasi member pertama kali?",
+    question:
+      "Apakah ada biaya pendaftaran atau biaya registrasi member pertama kali?",
     answer:
       "Tidak ada biaya administrasi tambahan! Anda hanya membayar sesuai paket yang Anda pilih (misal: Visit 15k, Member 1 Bulan 115k, dll). Sangat transparan dan terjangkau.",
   },
@@ -401,7 +426,8 @@ export const FAQS: FaqItem[] = [
       "Saide Gym buka SETIAP HARI (Senin s/d Minggu) pukul 08:00 – 22:00 WIB. Waktu yang biasanya lebih santai dan leluasa adalah pagi hingga sore hari (08:00 – 16:00 WIB).",
   },
   {
-    question: "Bagaimana cara mendaftar paket member atau memesan jadwal Personal Trainer?",
+    question:
+      "Bagaimana cara mendaftar paket member atau memesan jadwal Personal Trainer?",
     answer:
       "Anda bisa langsung datang ke lokasi Saide Gym di Jl. Kalikalapa RT 06/03 Sukaluyu, atau klik tombol WhatsApp di website ini untuk chat admin kami di 081284182622. Admin kami akan langsung membantu pendaftaran Anda.",
   },

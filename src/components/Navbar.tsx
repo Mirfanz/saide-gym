@@ -2,7 +2,10 @@
 
 import React, { useState, useEffect } from "react";
 import { GYM_INFO } from "@/data/gymData";
-import { WhatsAppIcon, ClockIcon, SaideGymLogo } from "./Icons";
+import { ClockCircleIcon } from "@solar-icons/react/linear/clock-circle";
+import { HamburgerMenuIcon } from "@solar-icons/react/linear/hamburger-menu";
+import { CloseCircleIcon } from "@solar-icons/react/linear/close-circle";
+import { WhatsAppIcon, SaideGymLogo } from "./Icons";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +62,7 @@ export default function Navbar() {
               }`}
             />
             <span className="font-medium text-zinc-300 flex items-center gap-1.5">
-              <ClockIcon className="w-3.5 h-3.5 text-red-400" />
+              <ClockCircleIcon className="w-3.5 h-3.5 text-red-400" />
               {gymOpenStatus.text}
             </span>
           </div>
@@ -128,30 +131,13 @@ export default function Navbar() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle navigation menu"
-          className="lg:hidden p-2 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/60 focus:outline-none"
+          className="lg:hidden p-2 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800/60 focus:outline-none flex items-center justify-center"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            {isOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
+          {isOpen ? (
+            <CloseCircleIcon className="w-6 h-6 text-red-400" />
+          ) : (
+            <HamburgerMenuIcon className="w-6 h-6" />
+          )}
         </button>
       </nav>
 

@@ -3,7 +3,13 @@
 
 import React, { useState } from "react";
 import { FACILITIES } from "@/data/gymData";
-import { DumbbellIcon, FlameIcon, UsersIcon, ShieldIcon, CheckIcon } from "./Icons";
+import { DumbbellIcon } from "@solar-icons/react/bold-duotone/dumbbell";
+import { DumbbellIcon as DumbbellLinear } from "@solar-icons/react/linear/dumbbell";
+import { Dumbbells2Icon } from "@solar-icons/react/bold-duotone/dumbbells-2";
+import { FlameIcon } from "@solar-icons/react/bold-duotone/flame";
+import { UsersGroupTwoRoundedIcon } from "@solar-icons/react/bold-duotone/users-group-two-rounded";
+import { ShieldCheckIcon } from "@solar-icons/react/bold-duotone/shield-check";
+import { CheckIcon } from "@solar-icons/react/linear/check";
 
 export default function Facilities() {
   const [activeTab, setActiveTab] = useState(FACILITIES[0].id);
@@ -13,18 +19,25 @@ export default function Facilities() {
       case "dumbbell":
         return <DumbbellIcon className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />;
       case "cables":
-        return <DumbbellIcon className="w-5 h-5 sm:w-6 sm:h-6 text-rose-400" />;
+        return (
+          <Dumbbells2Icon className="w-5 h-5 sm:w-6 sm:h-6 text-rose-400" />
+        );
       case "flame":
         return <FlameIcon className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400" />;
       case "users":
-        return <UsersIcon className="w-5 h-5 sm:w-6 sm:h-6 text-rose-300" />;
+        return (
+          <UsersGroupTwoRoundedIcon className="w-5 h-5 sm:w-6 sm:h-6 text-rose-300" />
+        );
       case "shield":
       default:
-        return <ShieldIcon className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />;
+        return (
+          <ShieldCheckIcon className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />
+        );
     }
   };
 
-  const selectedFacility = FACILITIES.find((f) => f.id === activeTab) || FACILITIES[0];
+  const selectedFacility =
+    FACILITIES.find((f) => f.id === activeTab) || FACILITIES[0];
 
   return (
     <section id="fasilitas" className="py-14 sm:py-20 lg:py-28 relative">
@@ -32,6 +45,7 @@ export default function Facilities() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-[11px] sm:text-xs font-semibold text-red-400">
+            <Dumbbells2Icon className="w-3.5 h-3.5" />
             <span>Fasilitas & Peralatan</span>
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
@@ -41,11 +55,13 @@ export default function Facilities() {
             </span>
           </h2>
           <p className="text-zinc-400 text-xs sm:text-base lg:text-lg">
-            Mulai dari pembentukan massa otot (*hypertrophy*), penguatan tenaga (*strength*), hingga pembakaran kalori (*fat loss*), semua perlengkapan tersedia lengkap di Saide Gym.
+            Mulai dari pembentukan massa otot (*hypertrophy*), penguatan tenaga
+            (*strength*), hingga pembakaran kalori (*fat loss*), semua
+            perlengkapan tersedia lengkap di Saide Gym.
           </p>
         </div>
 
-        {/* Tab Buttons: Horizontal swipeable on mobile, centered flex on desktop */}
+        {/* Tab Buttons */}
         <div className="mt-8 sm:mt-12">
           <div className="flex items-center gap-2 overflow-x-auto pb-2 pt-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:justify-center scrollbar-none [scrollbar-width:none]">
             {FACILITIES.map((facility) => {
@@ -139,7 +155,8 @@ export default function Facilities() {
                       Latihan Aman, Bersih & Terarah
                     </h4>
                     <p className="text-[11px] sm:text-xs text-zinc-400 mt-1">
-                      Semua peralatan diinspeksi secara berkala demi keamanan, kenyamanan postur, dan hasil latihan optimal Anda.
+                      Semua peralatan diinspeksi secara berkala demi keamanan,
+                      kenyamanan postur, dan hasil latihan optimal Anda.
                     </p>
                   </div>
 

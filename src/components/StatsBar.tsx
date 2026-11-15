@@ -1,5 +1,9 @@
 import React from "react";
-import { StarIcon, ClockIcon, DumbbellIcon, ShieldIcon } from "./Icons";
+import { StarIcon } from "@solar-icons/react/bold/star";
+import { ClockCircleIcon } from "@solar-icons/react/bold-duotone/clock-circle";
+import { WalletMoneyIcon } from "@solar-icons/react/bold-duotone/wallet-money";
+import { UsersGroupRoundedIcon } from "@solar-icons/react/bold-duotone/users-group-rounded";
+import { UsersGroupTwoRoundedIcon } from "@solar-icons/react/bold-duotone/users-group-two-rounded";
 
 export default function StatsBar() {
   const stats = [
@@ -10,19 +14,19 @@ export default function StatsBar() {
       desc: "38+ Ulasan Member",
     },
     {
-      icon: <ClockIcon className="w-5 h-5 text-red-400" />,
-      value: "08:00 - 22:00",
-      label: "Buka Setiap Hari",
-      desc: "Senin s/d Minggu",
-    },
-    {
-      icon: <DumbbellIcon className="w-5 h-5 text-rose-400" />,
+      icon: <WalletMoneyIcon className="w-5 h-5 text-emerald-400" />,
       value: "Rp 15.000",
       label: "Visit Harian Terjangkau",
       desc: "Bebas Pakai Semua Alat",
     },
     {
-      icon: <ShieldIcon className="w-5 h-5 text-red-400" />,
+      icon: <ClockCircleIcon className="w-5 h-5 text-red-400" />,
+      value: "08:00 - 22:00",
+      label: "Buka Setiap Hari",
+      desc: "Senin s/d Minggu",
+    },
+    {
+      icon: <UsersGroupTwoRoundedIcon className="w-5 h-5 text-rose-400" />,
       value: "100% Ramah",
       label: "Beginner Friendly",
       desc: "Coach Siap Membimbing",

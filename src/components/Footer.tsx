@@ -1,13 +1,14 @@
 import React from "react";
 import { GYM_INFO } from "@/data/gymData";
+import { StarIcon } from "@solar-icons/react/bold/star";
+import { WalletMoneyIcon } from "@solar-icons/react/bold-duotone/wallet-money";
+import { MapPointIcon } from "@solar-icons/react/linear/map-point";
+import { ClockCircleIcon } from "@solar-icons/react/linear/clock-circle";
+import { PhoneCallingIcon } from "@solar-icons/react/linear/phone-calling";
 import {
   InstagramIcon,
   TikTokIcon,
   WhatsAppIcon,
-  MapPinIcon,
-  ClockIcon,
-  PhoneIcon,
-  StarIcon,
   SaideGymLogo,
 } from "./Icons";
 
@@ -46,7 +47,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-200 hover:text-white font-bold text-sm border border-zinc-700 transition-all flex items-center gap-2"
             >
-              <MapPinIcon className="w-4 h-4 text-red-400" />
+              <MapPointIcon className="w-4 h-4 text-red-400" />
               <span>Petunjuk Arah Maps</span>
             </a>
           </div>
@@ -75,7 +76,7 @@ export default function Footer() {
             </p>
 
             <div className="flex items-center gap-2 text-xs text-amber-400 font-semibold">
-              <StarIcon className="w-4 h-4 fill-amber-400" />
+              <StarIcon className="w-4 h-4 text-amber-400" />
               <span>4.9 / 5.0 Rating di Google Maps (38+ Ulasan Nyata)</span>
             </div>
 
@@ -190,31 +191,32 @@ export default function Footer() {
 
           {/* Pricing Summary */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider">
-              Tarif Populer
+            <h4 className="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+              <WalletMoneyIcon className="w-4 h-4 text-red-400" />
+              <span>Tarif Populer</span>
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
-              <li className="flex justify-between border-b border-zinc-900 pb-1.5">
+              <li className="flex justify-between items-center border-b border-zinc-900 pb-1.5">
                 <span>Visit Harian</span>
                 <span className="font-bold text-red-400">Rp 15.000</span>
               </li>
-              <li className="flex justify-between border-b border-zinc-900 pb-1.5">
+              <li className="flex justify-between items-center border-b border-zinc-900 pb-1.5">
                 <span>Member 1 Bulan</span>
                 <span className="font-bold text-white">Rp 115.000</span>
               </li>
-              <li className="flex justify-between border-b border-zinc-900 pb-1.5">
+              <li className="flex justify-between items-center border-b border-zinc-900 pb-1.5">
                 <span>Member 3 Bulan (Best)</span>
                 <span className="font-bold text-red-400">Rp 330.000</span>
               </li>
-              <li className="flex justify-between border-b border-zinc-900 pb-1.5">
+              <li className="flex justify-between items-center border-b border-zinc-900 pb-1.5">
                 <span>Member 6 Bulan (Hemat)</span>
                 <span className="font-bold text-white">Rp 650.000</span>
               </li>
-              <li className="flex justify-between border-b border-zinc-900 pb-1.5">
+              <li className="flex justify-between items-center border-b border-zinc-900 pb-1.5">
                 <span>PT 1 Sesi + Free Visit</span>
                 <span className="font-bold text-red-400">Rp 80.000</span>
               </li>
-              <li className="flex justify-between">
+              <li className="flex justify-between items-center">
                 <span>PT 10 Sesi + Free Member</span>
                 <span className="font-bold text-white">Rp 700.000</span>
               </li>
@@ -228,17 +230,17 @@ export default function Footer() {
             </h4>
             <div className="space-y-2.5 text-xs text-zinc-300">
               <div className="flex items-start gap-2">
-                <MapPinIcon className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
+                <MapPointIcon className="w-4 h-4 text-red-400 flex-shrink-0 mt-0.5" />
                 <span>
                   Jl. Kalikalapa RT 06/03, Sukaluyu, Telukjambe Timur, Karawang
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <ClockIcon className="w-4 h-4 text-red-400 flex-shrink-0" />
+                <ClockCircleIcon className="w-4 h-4 text-red-400 flex-shrink-0" />
                 <span>Senin – Minggu: 08:00 – 22:00 WIB</span>
               </div>
               <div className="flex items-center gap-2">
-                <PhoneIcon className="w-4 h-4 text-red-400 flex-shrink-0" />
+                <PhoneCallingIcon className="w-4 h-4 text-red-400 flex-shrink-0" />
                 <span>WhatsApp: {GYM_INFO.phone}</span>
               </div>
               <div className="flex items-center gap-2">

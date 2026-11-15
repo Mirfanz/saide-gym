@@ -2,7 +2,13 @@
 
 import React, { useState } from "react";
 import { GYM_INFO } from "@/data/gymData";
-import { WhatsAppIcon, SparklesIcon, CheckIcon } from "./Icons";
+import { CalculatorMinimalisticIcon as CalculatorLinear } from "@solar-icons/react/linear/calculator-minimalistic";
+import { CalculatorMinimalisticIcon as CalculatorBold } from "@solar-icons/react/bold/calculator-minimalistic";
+import { DumbbellIcon } from "@solar-icons/react/bold/dumbbell";
+import { WhatsAppIcon } from "./Icons";
+import { MenIcon } from "@solar-icons/react/broken/men";
+import { WomenIcon } from "@solar-icons/react/broken/women";
+import { ShieldWarningIcon } from "@solar-icons/react/bold/shield-warning";
 
 export default function BmiCalculator() {
   const [height, setHeight] = useState<string>("170");
@@ -25,10 +31,15 @@ export default function BmiCalculator() {
     if (!h || !w || h <= 0 || w <= 0) return;
 
     const heightInMeters = h / 100;
-    const bmiValue = parseFloat((w / (heightInMeters * heightInMeters)).toFixed(1));
+    const bmiValue = parseFloat(
+      (w / (heightInMeters * heightInMeters)).toFixed(1),
+    );
 
     // Calculate percentage for gauge bar (range: 15 to 35)
-    const clampedPercent = Math.min(Math.max(((bmiValue - 15) / (35 - 15)) * 100, 4), 96);
+    const clampedPercent = Math.min(
+      Math.max(((bmiValue - 15) / (35 - 15)) * 100, 4),
+      96,
+    );
 
     let cat = "Normal (Ideal)";
     let col = "text-emerald-400";
@@ -77,19 +88,23 @@ export default function BmiCalculator() {
             {/* Header */}
             <div className="text-center max-w-2xl mx-auto space-y-2 sm:space-y-3">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/10 text-red-400 text-[11px] sm:text-xs font-semibold border border-red-500/20">
-                <SparklesIcon className="w-3.5 h-3.5" />
+                <CalculatorLinear className="w-3.5 h-3.5" />
                 Kalkulator Kebugaran Gratis
               </span>
               <h2 className="text-xl sm:text-3xl font-black text-white">
                 Cek Skor BMI & Temukan Program Latihanmu
               </h2>
               <p className="text-xs sm:text-sm text-zinc-400">
-                Ketahui status komposisi tubuh Anda secara instan dan dapatkan rekomendasi bimbingan latihan di Saide Gym.
+                Ketahui status komposisi tubuh Anda secara instan dan dapatkan
+                rekomendasi bimbingan latihan di Saide Gym.
               </p>
             </div>
 
             {/* Input Form */}
-            <form onSubmit={calculateBmi} className="mt-6 sm:mt-8 max-w-2xl mx-auto space-y-4 sm:space-y-6">
+            <form
+              onSubmit={calculateBmi}
+              className="mt-6 sm:mt-8 max-w-2xl mx-auto space-y-4 sm:space-y-6"
+            >
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
                 {/* Gender */}
                 <div>
@@ -100,24 +115,24 @@ export default function BmiCalculator() {
                     <button
                       type="button"
                       onClick={() => setGender("male")}
-                      className={`h-11 rounded-xl text-xs font-bold transition-all border flex items-center justify-center ${
+                      className={`gap-1 h-11 rounded-xl text-xs font-bold transition-all border flex items-center justify-center ${
                         gender === "male"
                           ? "bg-zinc-800 border-red-500 text-red-400 shadow-sm"
                           : "bg-zinc-950 border-zinc-800 text-zinc-400 hover:text-white"
                       }`}
                     >
-                      Pria ♂
+                      Pria <MenIcon className="size-3" />
                     </button>
                     <button
                       type="button"
                       onClick={() => setGender("female")}
-                      className={`h-11 rounded-xl text-xs font-bold transition-all border flex items-center justify-center ${
+                      className={`gap-1 h-11 rounded-xl text-xs font-bold transition-all border flex items-center justify-center ${
                         gender === "female"
                           ? "bg-zinc-800 border-red-500 text-red-400 shadow-sm"
                           : "bg-zinc-950 border-zinc-800 text-zinc-400 hover:text-white"
                       }`}
                     >
-                      Wanita ♀
+                      Wanita <WomenIcon className="size-3" />
                     </button>
                   </div>
                 </div>
@@ -162,9 +177,10 @@ export default function BmiCalculator() {
               <div className="flex justify-center pt-1">
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-8 h-11 rounded-xl bg-red-600 hover:bg-red-500 active:bg-red-500 text-white font-black text-xs sm:text-sm shadow-md shadow-red-600/25 transition-all active:scale-[0.98]"
+                  className="w-full sm:w-auto px-8 h-11 rounded-xl bg-red-600 hover:bg-red-500 active:bg-red-500 text-white font-black text-xs sm:text-sm shadow-md shadow-red-600/25 transition-all active:scale-[0.98] flex items-center justify-center gap-2"
                 >
-                  Hitung Status BMI Saya
+                  {/* <CalculatorBold className="w-4 h-4" /> */}
+                  <span>Hitung Status BMI Saya</span>
                 </button>
               </div>
             </form>
@@ -174,12 +190,20 @@ export default function BmiCalculator() {
               <div className="mt-6 sm:mt-8 p-4 sm:p-7 rounded-2xl bg-zinc-950/95 border border-zinc-800 space-y-4 sm:space-y-5 animate-fadeIn">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-3 border-b border-zinc-800/80 pb-3 sm:pb-4 text-center sm:text-left">
                   <div>
-                    <span className="text-[11px] sm:text-xs text-zinc-400">Skor BMI Anda:</span>
-                    <div className="text-3xl sm:text-4xl font-black text-white">{result.bmi}</div>
+                    <span className="text-[11px] sm:text-xs text-zinc-400">
+                      Skor BMI Anda:
+                    </span>
+                    <div className="text-3xl sm:text-4xl font-black text-white">
+                      {result.bmi}
+                    </div>
                   </div>
                   <div className="sm:text-right">
-                    <span className="text-[11px] sm:text-xs text-zinc-400">Kategori Fisik:</span>
-                    <div className={`text-base sm:text-lg font-black ${result.color}`}>
+                    <span className="text-[11px] sm:text-xs text-zinc-400">
+                      Kategori Fisik:
+                    </span>
+                    <div
+                      className={`text-base sm:text-lg font-black ${result.color}`}
+                    >
                       {result.category}
                     </div>
                   </div>
@@ -217,8 +241,8 @@ export default function BmiCalculator() {
 
                 <div className="space-y-1.5 sm:space-y-2 pt-1">
                   <div className="flex items-center gap-1.5 text-xs font-bold text-red-400 uppercase tracking-wider">
-                    <CheckIcon className="w-3.5 h-3.5" />
-                    <span>Rekomendasi Program Saide Gym:</span>
+                    <ShieldWarningIcon className="w-3.5 h-3.5" />
+                    <span>Rekomendasi Program Gym:</span>
                   </div>
                   <p className="text-xs sm:text-sm font-bold text-white">
                     {result.targetWorkout}
@@ -231,7 +255,7 @@ export default function BmiCalculator() {
                 <div className="pt-2 flex justify-center sm:justify-start">
                   <a
                     href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-                      `Halo Coach Saide Gym, saya baru cek BMI di website dengan hasil ${result.bmi} (${result.category}). Saya tertarik konsultasi program latihan "${result.targetWorkout}".`
+                      `Halo Coach Saide Gym, saya baru cek BMI di website dengan hasil ${result.bmi} (${result.category}). Saya tertarik konsultasi program latihan "${result.targetWorkout}".`,
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"

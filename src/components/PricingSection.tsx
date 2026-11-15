@@ -7,7 +7,18 @@ import {
   PT_PLANS,
   PricingPlan,
 } from "@/data/gymData";
-import { CheckIcon, WhatsAppIcon, SparklesIcon, DumbbellIcon } from "./Icons";
+import { TagPriceIcon as TagPriceLinear } from "@solar-icons/react/linear/tag-price";
+import { TagPriceIcon as TagPriceBold } from "@solar-icons/react/bold/tag-price";
+import { DumbbellIcon } from "@solar-icons/react/bold/dumbbell";
+import { UsersGroupTwoRoundedIcon } from "@solar-icons/react/bold/users-group-two-rounded";
+import { WalletMoneyIcon } from "@solar-icons/react/bold-duotone/wallet-money";
+import { CheckCircleIcon } from "@solar-icons/react/linear/check-circle";
+import { WhatsAppIcon } from "./Icons";
+import { Dumbbells2Icon } from "@solar-icons/react/bold/dumbbells-2";
+import { QuestionCircleIcon } from "@solar-icons/react/bold-duotone/question-circle";
+import { DumbbellLargeIcon } from "@solar-icons/react/bold-duotone/dumbbell-large";
+import { DumbbellsIcon } from "@solar-icons/react/bold-duotone/dumbbells";
+import { DumbbellSmallIcon } from "@solar-icons/react/bold-duotone/dumbbell-small";
 
 export default function PricingSection() {
   const [pricingType, setPricingType] = useState<"membership" | "pt">(
@@ -28,7 +39,7 @@ export default function PricingSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-semibold text-red-400">
-            <SparklesIcon className="w-3.5 h-3.5" />
+            <TagPriceLinear className="w-3.5 h-3.5" />
             <span>Pricelist Resmi & Transparan</span>
           </div>
 
@@ -57,7 +68,7 @@ export default function PricingSection() {
                     : "text-zinc-400 hover:text-white"
                 }`}
               >
-                <DumbbellIcon className="w-4 h-4" />
+                <DumbbellIcon className="w-4 h-4 hidden md:block" />
                 <span>Paket Membership</span>
               </button>
 
@@ -70,7 +81,7 @@ export default function PricingSection() {
                     : "text-zinc-400 hover:text-white"
                 }`}
               >
-                <SparklesIcon className="w-4 h-4" />
+                <UsersGroupTwoRoundedIcon className="w-4 h-4 hidden md:block" />
                 <span>Personal Trainer (PT)</span>
               </button>
             </div>
@@ -127,20 +138,26 @@ export default function PricingSection() {
                             {plan.originalPrice}
                           </span>
                           {plan.savings && (
-                            <span className="text-[10px] font-bold text-red-400 bg-red-500/10 px-2 py-0.5 rounded border border-red-500/20">
-                              {plan.savings}
+                            <span className="inline-flex items-center gap-1 text-[10px] font-bold text-red-400 bg-red-500/10 px-2 py-0.5 rounded border border-red-500/20">
+                              <TagPriceBold className="w-2.5 h-2.5" />
+                              <span>{plan.savings}</span>
                             </span>
                           )}
                         </div>
                       )}
 
-                      <div className="flex items-baseline gap-1.5">
-                        <span className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-                          {plan.priceDisplay}
-                        </span>
-                        <span className="text-xs text-zinc-400 font-medium">
-                          / {plan.period}
-                        </span>
+                      <div className="flex items-center gap-2.5">
+                        {/* <div className="p-1.5 rounded-lg bg-zinc-800/80 border border-zinc-700/60 text-emerald-400 flex-shrink-0">
+                          <WalletMoneyIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+                        </div> */}
+                        <div className="flex items-baseline gap-1.5">
+                          <span className="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                            {plan.priceDisplay}
+                          </span>
+                          <span className="text-xs text-zinc-400 font-medium">
+                            / {plan.period}
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -157,7 +174,7 @@ export default function PricingSection() {
                           className="flex items-start gap-2.5 text-xs text-zinc-300 leading-snug"
                         >
                           <div className="w-4 h-4 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <CheckIcon className="w-3 h-3" />
+                            <CheckCircleIcon className="w-3.5 h-3.5" />
                           </div>
                           <span>{feat}</span>
                         </li>
@@ -191,7 +208,7 @@ export default function PricingSection() {
         <div className="mt-12 rounded-2xl bg-zinc-900/60 border border-zinc-800 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
             <h4 className="text-lg font-bold text-white flex items-center justify-center md:justify-start gap-2">
-              <SparklesIcon className="w-5 h-5 text-red-400" />
+              <DumbbellLargeIcon className="w-5 h-5 text-red-600 hidden md:block" />
               Ingin Trial Dulu atau Konsultasi Target Latihan?
             </h4>
             <p className="text-sm text-zinc-400">

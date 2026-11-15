@@ -1,6 +1,11 @@
 import React from "react";
 import { GYM_INFO } from "@/data/gymData";
-import { MapPinIcon, ClockIcon, PhoneIcon, ArrowRightIcon, SaideGymLogo } from "./Icons";
+import { MapPointIcon as MapPointLinear } from "@solar-icons/react/linear/map-point";
+import { MapPointIcon as MapPointBoldDuotone } from "@solar-icons/react/bold-duotone/map-point";
+import { ClockCircleIcon } from "@solar-icons/react/bold-duotone/clock-circle";
+import { PhoneCallingIcon } from "@solar-icons/react/bold-duotone/phone-calling";
+import { AltArrowRightIcon } from "@solar-icons/react/linear/alt-arrow-right";
+import { SaideGymLogo } from "./Icons";
 
 export default function LocationSection() {
   return (
@@ -13,7 +18,7 @@ export default function LocationSection() {
           {/* Left: Location & Contact Info */}
           <div className="lg:col-span-5 space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-semibold text-red-400">
-              <MapPinIcon className="w-3.5 h-3.5" />
+              <MapPointLinear className="w-3.5 h-3.5" />
               <span>Lokasi & Akses Mudah</span>
             </div>
 
@@ -34,7 +39,7 @@ export default function LocationSection() {
             <div className="space-y-3 pt-2">
               <div className="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 flex items-start gap-3.5">
                 <div className="p-2.5 rounded-xl bg-zinc-800 text-red-400 flex-shrink-0 mt-0.5">
-                  <MapPinIcon className="w-5 h-5" />
+                  <MapPointBoldDuotone className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">
@@ -51,7 +56,7 @@ export default function LocationSection() {
 
               <div className="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 flex items-start gap-3.5">
                 <div className="p-2.5 rounded-xl bg-zinc-800 text-red-400 flex-shrink-0 mt-0.5">
-                  <ClockIcon className="w-5 h-5" />
+                  <ClockCircleIcon className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">
@@ -68,7 +73,7 @@ export default function LocationSection() {
 
               <div className="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 flex items-start gap-3.5">
                 <div className="p-2.5 rounded-xl bg-zinc-800 text-red-400 flex-shrink-0 mt-0.5">
-                  <PhoneIcon className="w-5 h-5" />
+                  <PhoneCallingIcon className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">
@@ -93,7 +98,7 @@ export default function LocationSection() {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold text-sm shadow-lg shadow-red-600/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
                 <span>Buka Petunjuk Arah di Google Maps</span>
-                <ArrowRightIcon className="w-4 h-4" />
+                <AltArrowRightIcon className="w-4 h-4" />
               </a>
             </div>
           </div>

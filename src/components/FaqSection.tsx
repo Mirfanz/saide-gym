@@ -2,7 +2,9 @@
 
 import React, { useState } from "react";
 import { FAQS, GYM_INFO } from "@/data/gymData";
-import { ChevronDownIcon, SparklesIcon, WhatsAppIcon } from "./Icons";
+import { QuestionCircleIcon } from "@solar-icons/react/linear/question-circle";
+import { AltArrowDownIcon } from "@solar-icons/react/linear/alt-arrow-down";
+import { WhatsAppIcon } from "./Icons";
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -17,7 +19,7 @@ export default function FaqSection() {
         {/* Header */}
         <div className="text-center space-y-4 mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-semibold text-red-400">
-            <SparklesIcon className="w-3.5 h-3.5" />
+            <QuestionCircleIcon className="w-3.5 h-3.5" />
             <span>Tanya Jawab</span>
           </div>
 
@@ -50,12 +52,10 @@ export default function FaqSection() {
                   </span>
                   <div
                     className={`w-7 h-7 rounded-full bg-zinc-800 flex items-center justify-center text-zinc-400 flex-shrink-0 transition-transform duration-200 ${
-                      isOpen
-                        ? "rotate-180 text-red-400 bg-red-500/10"
-                        : ""
+                      isOpen ? "rotate-180 text-red-400 bg-red-500/10" : ""
                     }`}
                   >
-                    <ChevronDownIcon className="w-4 h-4" />
+                    <AltArrowDownIcon className="w-4 h-4" />
                   </div>
                 </button>
 
@@ -82,8 +82,8 @@ export default function FaqSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-bold text-red-400 hover:text-red-300 transition-colors"
           >
-            <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
-            <span>Chat Langsung dengan Admin Saide Gym (081284182622) →</span>
+            <WhatsAppIcon className="w-4 h-4 text-[#25D366] hidden sm:block" />
+            <span>Chat Langsung dengan Admin Saide Gym (081284182622)</span>
           </a>
         </div>
       </div>

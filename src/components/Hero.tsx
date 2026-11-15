@@ -3,19 +3,26 @@
 
 import React from "react";
 import { GYM_INFO } from "@/data/gymData";
-import {
-  StarIcon,
-  WhatsAppIcon,
-  MapPinIcon,
-  CheckIcon,
-  SparklesIcon,
-  ClockIcon,
-  SaideGymLogo,
-} from "./Icons";
-
+import { StarIcon } from "@solar-icons/react/bold/star";
+import { TagPriceIcon } from "@solar-icons/react/bold/tag-price";
+import { WalletMoneyIcon } from "@solar-icons/react/bold-duotone/wallet-money";
+import { CalendarMarkIcon } from "@solar-icons/react/bold-duotone/calendar-mark";
+import { UsersGroupTwoRoundedIcon } from "@solar-icons/react/bold-duotone/users-group-two-rounded";
+import { DumbbellIcon } from "@solar-icons/react/bold-duotone/dumbbell";
+import { Dumbbells2Icon } from "@solar-icons/react/bold-duotone/dumbbells-2";
+import { FlameIcon } from "@solar-icons/react/bold-duotone/flame";
+import { ClockCircleIcon } from "@solar-icons/react/broken/clock-circle";
+import { MapPointWaveIcon } from "@solar-icons/react/bold-duotone/map-point-wave";
+import { ShieldCheckIcon } from "@solar-icons/react/linear/shield-check";
+import { UsersGroupRoundedIcon } from "@solar-icons/react/linear/users-group-rounded";
+import { SaideGymLogo, WhatsAppIcon } from "./Icons";
+import { CheckIcon } from "@solar-icons/react/broken/check";
 export default function Hero() {
   return (
-    <section id="hero" className="relative overflow-hidden pt-8 pb-14 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28">
+    <section
+      id="hero"
+      className="relative overflow-hidden pt-8 pb-14 sm:pt-16 sm:pb-20 lg:pt-20 lg:pb-28"
+    >
       {/* Background Hero Photography with Dark Dramatic Overlay */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Real Gym Atmospheric Photo with dark overlay */}
@@ -39,12 +46,14 @@ export default function Hero() {
             {/* Top Pill / Badge */}
             <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3.5 py-1 sm:py-1.5 rounded-full bg-zinc-900/90 border border-zinc-800 text-[11px] sm:text-xs text-zinc-300 shadow-inner backdrop-blur-md">
               <span className="flex items-center text-amber-400 gap-1 font-bold">
-                <StarIcon className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                <StarIcon className="w-3.5 h-3.5 text-amber-400" />
                 4.9 / 5.0
               </span>
               <span className="text-zinc-600">•</span>
               <span className="text-zinc-300">
-                <span className="hidden sm:inline">Pusat Fitness Terfavorit di Sukaluyu, Karawang</span>
+                <span className="hidden sm:inline">
+                  Pusat Fitness Terfavorit di Sukaluyu, Karawang
+                </span>
                 <span className="sm:hidden">Fitness Sukaluyu, Karawang</span>
               </span>
             </div>
@@ -59,23 +68,38 @@ export default function Hero() {
 
             {/* Subtitle */}
             <p className="text-sm sm:text-base lg:text-lg text-zinc-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Pusat kebugaran resmi <strong className="text-white">SAIDE GYM</strong> di Sukaluyu, Karawang. Peralatan lengkap,
-              suasana bersih & ramah pemula, serta didampingi coach berpengalaman dengan tarif paling hemat.
+              Pusat kebugaran resmi{" "}
+              <strong className="text-white">SAIDE GYM</strong> di Sukaluyu,
+              Karawang. Peralatan lengkap, suasana bersih & ramah pemula, serta
+              didampingi coach berpengalaman dengan tarif paling hemat.
             </p>
 
             {/* Price highlights pill - Optimized compact grid for mobile */}
             <div className="grid grid-cols-3 gap-2 pt-1 text-center font-bold text-[11px] sm:text-xs max-w-md mx-auto lg:mx-0">
-              <div className="px-2 py-2 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 flex flex-col justify-center">
-                <span className="text-[9px] uppercase tracking-wider text-red-400/80 font-medium">Harian</span>
+              <div className="px-2 py-2 rounded-xl bg-red-500/10 border border-red-500/30 text-red-400 flex flex-col items-center justify-center">
+                <div className="flex items-center gap-1 text-[9px] uppercase tracking-wider text-red-400/80 font-medium">
+                  {/* <WalletMoneyIcon className="w-3 h-3" /> */}
+                  <span>Harian</span>
+                </div>
                 <span className="font-black text-xs sm:text-sm">Visit 15K</span>
               </div>
-              <div className="px-2 py-2 rounded-xl bg-zinc-900/90 border border-zinc-800 text-zinc-200 flex flex-col justify-center">
-                <span className="text-[9px] uppercase tracking-wider text-zinc-400 font-medium">Bulanan</span>
-                <span className="font-black text-xs sm:text-sm text-white">Member 115K</span>
+              <div className="px-2 py-2 rounded-xl bg-zinc-900/90 border border-zinc-800 text-zinc-200 flex flex-col items-center justify-center">
+                <div className="flex items-center gap-1 text-[9px] uppercase tracking-wider text-zinc-400 font-medium">
+                  {/* <CalendarMarkIcon className="w-3 h-3 text-red-400" /> */}
+                  <span>Bulanan</span>
+                </div>
+                <span className="font-black text-xs sm:text-sm text-white">
+                  Member 115K
+                </span>
               </div>
-              <div className="px-2 py-2 rounded-xl bg-zinc-900/90 border border-zinc-800 text-zinc-200 flex flex-col justify-center">
-                <span className="text-[9px] uppercase tracking-wider text-zinc-400 font-medium">Privat PT</span>
-                <span className="font-black text-xs sm:text-sm text-rose-400">Free Member</span>
+              <div className="px-2 py-2 rounded-xl bg-zinc-900/90 border border-zinc-800 text-zinc-200 flex flex-col items-center justify-center">
+                <div className="flex items-center gap-1 text-[9px] uppercase tracking-wider text-zinc-400 font-medium">
+                  {/* <UsersGroupTwoRoundedIcon className="w-3 h-3 text-rose-400" /> */}
+                  <span>Privat PT</span>
+                </div>
+                <span className="font-black text-xs sm:text-sm text-rose-400">
+                  Free Member
+                </span>
               </div>
             </div>
 
@@ -85,13 +109,13 @@ export default function Hero() {
                 href="#harga"
                 className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-black text-sm sm:text-base shadow-lg shadow-red-600/30 transition-all active:scale-[0.98] text-center flex items-center justify-center gap-2 min-h-[46px]"
               >
-                <SparklesIcon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                <TagPriceIcon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 <span>Lihat Pilihan Paket & Harga</span>
               </a>
 
               <a
                 href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-                  "Halo Admin Saide Gym Karawang, saya ingin konsultasi program latihan dan tanya info membership."
+                  "Halo Admin Saide Gym Karawang, saya ingin konsultasi program latihan dan tanya info membership.",
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -102,23 +126,23 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Trust points */}
+            {/* Trust points with clean linear icons */}
             <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2 text-xs text-zinc-400">
-              <div className="flex items-center gap-1.5">
-                <div className="w-4 h-4 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0">
-                  <CheckIcon className="w-3 h-3" />
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-full bg-red-500/15 border border-red-500/25 text-red-400 flex items-center justify-center flex-shrink-0">
+                  <WalletMoneyIcon className="w-3.5 h-3.5" />
                 </div>
                 <span>Bebas Biaya Admin</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <div className="w-4 h-4 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0">
-                  <CheckIcon className="w-3 h-3" />
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-full bg-red-500/15 border border-red-500/25 text-red-400 flex items-center justify-center flex-shrink-0">
+                  <ShieldCheckIcon className="w-3.5 h-3.5" />
                 </div>
                 <span>Free Loker & Parkir</span>
               </div>
-              <div className="flex items-center gap-1.5">
-                <div className="w-4 h-4 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0">
-                  <CheckIcon className="w-3 h-3" />
+              <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-full bg-red-500/15 border border-red-500/25 text-red-400 flex items-center justify-center flex-shrink-0">
+                  <UsersGroupRoundedIcon className="w-3.5 h-3.5" />
                 </div>
                 <span>Coach Standby</span>
               </div>
@@ -160,9 +184,11 @@ export default function Hero() {
                       <SaideGymLogo className="w-10 h-10 sm:w-11 sm:h-11 drop-shadow-md" />
                     </div>
                     <div>
-                      <h2 className="text-base sm:text-lg font-bold text-white">SAIDE GYM</h2>
+                      <h2 className="text-base sm:text-lg font-bold text-white">
+                        SAIDE GYM
+                      </h2>
                       <p className="text-[11px] sm:text-xs text-zinc-400 flex items-center gap-1">
-                        <MapPinIcon className="w-3 h-3 text-red-400" />
+                        <MapPointWaveIcon className="size-3 mt-0.5 text-red-400" />
                         Sukaluyu, Telukjambe Timur
                       </p>
                     </div>
@@ -171,47 +197,58 @@ export default function Hero() {
                     <span className="inline-block px-2 py-0.5 rounded-md bg-red-500/10 text-red-400 text-[11px] font-bold border border-red-500/30">
                       4.9 ⭐ Maps
                     </span>
-                    <p className="text-[10px] text-zinc-500 mt-0.5">38+ Review</p>
+                    <p className="text-[10px] text-zinc-500 mt-0.5">
+                      38+ Review
+                    </p>
                   </div>
                 </div>
 
                 {/* Live Info Grid */}
                 <div className="grid grid-cols-2 gap-2.5 text-left">
                   <div className="p-3 rounded-xl bg-zinc-950/60 border border-zinc-800/80">
-                    <span className="text-[10px] text-zinc-400 block font-medium">Jam Buka</span>
+                    <span className="text-[10px] text-zinc-400 block font-medium">
+                      Jam Buka
+                    </span>
                     <div className="text-xs sm:text-sm font-bold text-zinc-100 mt-0.5 flex items-center gap-1">
-                      <ClockIcon className="w-3.5 h-3.5 text-red-400" />
+                      <ClockCircleIcon className="size-3.5 mt-0.5 text-red-400" />
                       08:00 - 22:00
                     </div>
-                    <span className="text-[9px] text-red-400 font-semibold">Setiap Hari</span>
+                    <span className="text-[9px] text-red-400 font-semibold">
+                      Setiap Hari
+                    </span>
                   </div>
 
                   <div className="p-3 rounded-xl bg-zinc-950/60 border border-zinc-800/80">
-                    <span className="text-[10px] text-zinc-400 block font-medium">Tarif Latihan</span>
-                    <div className="text-xs sm:text-sm font-bold text-red-400 mt-0.5">
+                    <span className="text-[10px] text-zinc-400 block font-medium">
+                      Tarif Latihan
+                    </span>
+                    <div className="text-xs sm:text-sm font-bold text-red-400 mt-0.5 flex items-center gap-1">
+                      {/* <WalletMoneyIcon className="w-3.5 h-3.5 text-red-400" /> */}
                       Mulai 15 Ribu
                     </div>
-                    <span className="text-[9px] text-zinc-400">Tanpa biaya daftar</span>
+                    <span className="text-[9px] text-zinc-400">
+                      Tanpa biaya daftar
+                    </span>
                   </div>
                 </div>
 
                 {/* Popular Feature Checklist */}
-                <div className="space-y-2 text-xs sm:text-sm text-zinc-300">
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0">
-                      <CheckIcon className="w-3 h-3" />
+                <div className="space-y-2.5 text-xs sm:text-sm text-zinc-300">
+                  <div className="flex items-center gap-2.5">
+                    <div className="sieze-4 rounded-full bg-red-500/15 border border-red-500/25 text-red-400 flex items-center justify-center flex-shrink-0">
+                      <CheckIcon className="size-3.5" />
                     </div>
                     <span>Dumbbell lengkap, Olympic barbel & Squat rack</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0">
-                      <CheckIcon className="w-3 h-3" />
+                  <div className="flex items-center gap-2.5">
+                    <div className="sieze-4 rounded-full bg-red-500/15 border border-red-500/25 text-red-400 flex items-center justify-center flex-shrink-0">
+                      <CheckIcon className="size-3.5" />
                     </div>
                     <span>Cable crossover, Lat pulldown & Mesin isolasi</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-4 h-4 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0">
-                      <CheckIcon className="w-3 h-3" />
+                  <div className="flex items-center gap-2.5">
+                    <div className="sieze-4 rounded-full bg-red-500/15 border border-red-500/25 text-red-400 flex items-center justify-center flex-shrink-0">
+                      <CheckIcon className="size-3.5" />
                     </div>
                     <span>Cardio zone & pelatih standby siap membantu</span>
                   </div>

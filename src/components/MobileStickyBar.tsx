@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { GYM_INFO } from "@/data/gymData";
-import { WhatsAppIcon, SparklesIcon } from "./Icons";
+import { WalletMoneyIcon } from "@solar-icons/react/bold-duotone/wallet-money";
+import { WhatsAppIcon } from "./Icons";
 
 export default function MobileStickyBar() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +30,7 @@ export default function MobileStickyBar() {
         {/* Left: Quick Tariff Chip */}
         <div className="flex flex-col pl-1">
           <div className="flex items-center gap-1 text-[10px] text-zinc-400 font-semibold">
-            <SparklesIcon className="w-3 h-3 text-red-400" />
+            <WalletMoneyIcon className="w-3 h-3 text-red-400" />
             <span>Tarif Member</span>
           </div>
           <div className="text-xs font-black text-white">
