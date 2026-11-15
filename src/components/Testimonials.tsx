@@ -53,7 +53,7 @@ export default function Testimonials() {
                     ))}
                   </div>
                   <span className="text-[10px] sm:text-[11px] font-semibold text-zinc-500 flex items-center gap-1">
-                    <SparklesIcon className="w-3 h-3 text-emerald-400" />
+                    <SparklesIcon className="w-3 h-3 text-red-400" />
                     {review.source}
                   </span>
                 </div>
@@ -74,7 +74,7 @@ export default function Testimonials() {
                   </div>
                   <div>
                     <h4 className="text-xs sm:text-sm font-bold text-white">{review.author}</h4>
-                    <p className="text-[10px] sm:text-xs text-emerald-400 font-medium">{review.role}</p>
+                    <p className="text-[10px] sm:text-xs text-red-400 font-medium">{review.role}</p>
                   </div>
                 </div>
                 <span className="text-[10px] sm:text-xs text-zinc-500">{review.timeAgo}</span>

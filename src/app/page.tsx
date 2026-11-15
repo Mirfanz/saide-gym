@@ -13,7 +13,7 @@ import MobileStickyBar from "@/components/MobileStickyBar";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#09090b] text-[#f4f4f5] selection:bg-emerald-500 selection:text-zinc-950 pb-14 md:pb-0">
+    <main className="min-h-screen bg-[#09090b] text-[#f4f4f5] selection:bg-red-600 selection:text-white pb-14 md:pb-0">
       {/* Top Navbar */}
       <Navbar />
 

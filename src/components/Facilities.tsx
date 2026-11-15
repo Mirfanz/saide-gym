@@ -11,16 +11,16 @@ export default function Facilities() {
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case "dumbbell":
-        return <DumbbellIcon className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400" />;
+        return <DumbbellIcon className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />;
       case "cables":
-        return <DumbbellIcon className="w-5 h-5 sm:w-6 sm:h-6 text-lime-400" />;
+        return <DumbbellIcon className="w-5 h-5 sm:w-6 sm:h-6 text-rose-400" />;
       case "flame":
         return <FlameIcon className="w-5 h-5 sm:w-6 sm:h-6 text-orange-400" />;
       case "users":
-        return <UsersIcon className="w-5 h-5 sm:w-6 sm:h-6 text-teal-400" />;
+        return <UsersIcon className="w-5 h-5 sm:w-6 sm:h-6 text-rose-300" />;
       case "shield":
       default:
-        return <ShieldIcon className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400" />;
+        return <ShieldIcon className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />;
     }
   };
 
@@ -31,12 +31,12 @@ export default function Facilities() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-[11px] sm:text-xs font-semibold text-emerald-400">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-[11px] sm:text-xs font-semibold text-red-400">
             <span>Fasilitas & Peralatan</span>
           </div>
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
             Peralatan Lengkap & Terawat untuk{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-lime-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-rose-400">
               Setiap Target Latihan
             </span>
           </h2>
@@ -56,7 +56,7 @@ export default function Facilities() {
                   onClick={() => setActiveTab(facility.id)}
                   className={`flex-shrink-0 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2 border whitespace-nowrap ${
                     isActive
-                      ? "bg-emerald-500 text-zinc-950 border-emerald-400 shadow-md shadow-emerald-500/20 scale-[1.02]"
+                      ? "bg-red-600 text-white border-red-500 shadow-md shadow-red-600/25 scale-[1.02]"
                       : "bg-zinc-900/80 text-zinc-300 border-zinc-800 hover:bg-zinc-800 hover:text-white"
                   }`}
                 >
@@ -81,7 +81,7 @@ export default function Facilities() {
                   {getIcon(selectedFacility.icon)}
                 </div>
                 <div>
-                  <span className="text-[10px] sm:text-xs uppercase tracking-wider text-emerald-400 font-bold block">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wider text-red-400 font-bold block">
                     {selectedFacility.category}
                   </span>
                   <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white">
@@ -104,7 +104,7 @@ export default function Facilities() {
                       key={idx}
                       className="flex items-start gap-2 p-2.5 sm:p-3 rounded-xl bg-zinc-950/60 border border-zinc-800/60 text-xs sm:text-sm text-zinc-200"
                     >
-                      <div className="w-4 h-4 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-4 h-4 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <CheckIcon className="w-3 h-3" />
                       </div>
                       <span>{item}</span>
@@ -127,7 +127,7 @@ export default function Facilities() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/30 to-transparent" />
                   <div className="absolute top-3 right-3">
-                    <span className="px-2.5 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-emerald-400 text-[10px] sm:text-xs font-bold border border-zinc-700">
+                    <span className="px-2.5 py-1 rounded-full bg-zinc-950/80 backdrop-blur-md text-red-400 text-[10px] sm:text-xs font-bold border border-zinc-700">
                       {selectedFacility.tag}
                     </span>
                   </div>
@@ -145,7 +145,7 @@ export default function Facilities() {
 
                   <a
                     href="#harga"
-                    className="w-full block py-2.5 sm:py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 active:bg-emerald-400 text-zinc-950 font-bold text-xs sm:text-sm text-center transition-all shadow-md shadow-emerald-500/20"
+                    className="w-full block py-2.5 sm:py-3 rounded-xl bg-red-600 hover:bg-red-500 active:bg-red-500 text-white font-bold text-xs sm:text-sm text-center transition-all shadow-md shadow-red-600/20"
                   >
                     Daftar & Rasakan Fasilitasnya
                   </a>

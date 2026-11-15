@@ -339,7 +339,7 @@ export const REVIEWS: Review[] = [
       "Gym paling worth it di Telukjambe Karawang! Alatnya lengkap banget, suasananya ramah buat pemula, gak ada yang sok jago. Coach-nya juga suka bantuin kalau form gerakan salah. Mantap Saide Gym!",
     source: "Google Maps Review",
     initials: "RP",
-    avatarColor: "from-emerald-500 to-teal-600",
+    avatarColor: "from-red-600 to-rose-700",
   },
   {
     id: "rev-2",

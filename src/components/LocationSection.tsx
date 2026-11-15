@@ -1,6 +1,6 @@
 import React from "react";
 import { GYM_INFO } from "@/data/gymData";
-import { MapPinIcon, ClockIcon, PhoneIcon, ArrowRightIcon } from "./Icons";
+import { MapPinIcon, ClockIcon, PhoneIcon, ArrowRightIcon, SaideGymLogo } from "./Icons";
 
 export default function LocationSection() {
   return (
@@ -12,14 +12,14 @@ export default function LocationSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left: Location & Contact Info */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-semibold text-emerald-400">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-semibold text-red-400">
               <MapPinIcon className="w-3.5 h-3.5" />
               <span>Lokasi & Akses Mudah</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
               Kunjungi Langsung{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-lime-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-rose-400">
                 SAIDE GYM Karawang
               </span>
             </h2>
@@ -33,7 +33,7 @@ export default function LocationSection() {
             {/* Address Cards */}
             <div className="space-y-3 pt-2">
               <div className="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 flex items-start gap-3.5">
-                <div className="p-2.5 rounded-xl bg-zinc-800 text-emerald-400 flex-shrink-0 mt-0.5">
+                <div className="p-2.5 rounded-xl bg-zinc-800 text-red-400 flex-shrink-0 mt-0.5">
                   <MapPinIcon className="w-5 h-5" />
                 </div>
                 <div>
@@ -50,14 +50,14 @@ export default function LocationSection() {
               </div>
 
               <div className="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 flex items-start gap-3.5">
-                <div className="p-2.5 rounded-xl bg-zinc-800 text-emerald-400 flex-shrink-0 mt-0.5">
+                <div className="p-2.5 rounded-xl bg-zinc-800 text-red-400 flex-shrink-0 mt-0.5">
                   <ClockIcon className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-sm font-bold text-white">
                     Jam Operasional
                   </h4>
-                  <p className="text-xs text-emerald-400 font-semibold mt-1">
+                  <p className="text-xs text-red-400 font-semibold mt-1">
                     Setiap Hari: 08:00 – 22:00 WIB
                   </p>
                   <p className="text-[11px] text-zinc-400 mt-0.5">
@@ -67,7 +67,7 @@ export default function LocationSection() {
               </div>
 
               <div className="p-4 rounded-2xl bg-zinc-900/80 border border-zinc-800 flex items-start gap-3.5">
-                <div className="p-2.5 rounded-xl bg-zinc-800 text-emerald-400 flex-shrink-0 mt-0.5">
+                <div className="p-2.5 rounded-xl bg-zinc-800 text-red-400 flex-shrink-0 mt-0.5">
                   <PhoneIcon className="w-5 h-5" />
                 </div>
                 <div>
@@ -90,7 +90,7 @@ export default function LocationSection() {
                 href={GYM_INFO.mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-lime-500 hover:from-emerald-400 hover:to-lime-400 text-zinc-950 font-bold text-sm shadow-lg shadow-emerald-500/25 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold text-sm shadow-lg shadow-red-600/30 transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
                 <span>Buka Petunjuk Arah di Google Maps</span>
                 <ArrowRightIcon className="w-4 h-4" />
@@ -117,11 +117,9 @@ export default function LocationSection() {
                 />
 
                 {/* Overlay Location Badge on bottom of map */}
-                <div className="absolute bottom-4 left-4 right-4 sm:right-auto bg-zinc-950/90 backdrop-blur-md border border-zinc-800 p-3.5 rounded-xl shadow-xl flex items-center justify-between gap-4">
+                <div className="absolute bottom-4 left-4 right-4 sm:right-auto bg-zinc-950/90 backdrop-blur-md border border-zinc-800 p-3 rounded-xl shadow-xl flex items-center justify-between gap-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-emerald-500 text-zinc-950 flex items-center justify-center font-bold text-xs flex-shrink-0">
-                      SG
-                    </div>
+                    <SaideGymLogo className="w-8 h-8 flex-shrink-0 drop-shadow-sm" />
                     <div>
                       <p className="text-xs font-bold text-white">SAIDE GYM</p>
                       <p className="text-[10px] text-zinc-400">
@@ -133,7 +131,7 @@ export default function LocationSection() {
                     href={GYM_INFO.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-emerald-400 hover:text-emerald-300 font-bold underline flex-shrink-0"
+                    className="text-xs text-red-400 hover:text-red-300 font-bold underline flex-shrink-0"
                   >
                     Navigasi GPS
                   </a>

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { GYM_INFO } from "@/data/gymData";
-import { DumbbellIcon, WhatsAppIcon, ClockIcon } from "./Icons";
+import { WhatsAppIcon, ClockIcon, SaideGymLogo } from "./Icons";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +59,7 @@ export default function Navbar() {
               }`}
             />
             <span className="font-medium text-zinc-300 flex items-center gap-1.5">
-              <ClockIcon className="w-3.5 h-3.5 text-emerald-400" />
+              <ClockIcon className="w-3.5 h-3.5 text-red-400" />
               {gymOpenStatus.text}
             </span>
           </div>
@@ -69,7 +69,7 @@ export default function Navbar() {
               href={`https://wa.me/${GYM_INFO.phoneIntl}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors flex items-center gap-1"
+              className="text-red-400 hover:text-red-300 font-semibold transition-colors flex items-center gap-1"
             >
               <WhatsAppIcon className="w-3.5 h-3.5" />
               {GYM_INFO.phone}
@@ -81,13 +81,14 @@ export default function Navbar() {
       {/* Main Navbar */}
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand */}
-        <a href="#hero" className="flex items-center gap-2.5 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-lime-500 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
-            <DumbbellIcon className="w-6 h-6 text-zinc-950 stroke-[2.5]" />
+        <a href="#hero" className="flex items-center gap-3 group">
+          <div className="relative w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform flex-shrink-0">
+            <div className="absolute -inset-1 bg-red-600/30 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity" />
+            <SaideGymLogo className="w-10 h-10 drop-shadow-md relative z-10" />
           </div>
           <div>
             <span className="text-xl font-black tracking-wider text-white flex items-center gap-1">
-              SAIDE <span className="text-emerald-400">GYM</span>
+              SAIDE <span className="text-red-500">GYM</span>
             </span>
             <span className="block text-[10px] tracking-widest text-zinc-400 uppercase -mt-1">
               Karawang Fitness
@@ -101,7 +102,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-zinc-300 hover:text-emerald-400 transition-colors"
+              className="text-sm font-medium text-zinc-300 hover:text-red-400 transition-colors"
             >
               {link.name}
             </a>
@@ -116,7 +117,7 @@ export default function Navbar() {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-sm shadow-md shadow-emerald-500/25 transition-all hover:scale-[1.02] active:scale-[0.98]"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-red-600 hover:bg-red-500 text-white font-bold text-sm shadow-md shadow-red-600/25 transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
             <WhatsAppIcon className="w-4 h-4" />
             <span>Chat WhatsApp</span>
@@ -163,7 +164,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="px-3 py-2.5 rounded-lg text-base font-medium text-zinc-200 hover:bg-zinc-900 hover:text-emerald-400 transition-colors"
+                className="px-3 py-2.5 rounded-lg text-base font-medium text-zinc-200 hover:bg-zinc-900 hover:text-red-400 transition-colors"
               >
                 {link.name}
               </a>
@@ -177,7 +178,7 @@ export default function Navbar() {
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-3 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-center flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20"
+              className="w-full py-3 rounded-lg bg-red-600 hover:bg-red-500 text-white font-bold text-center flex items-center justify-center gap-2 shadow-lg shadow-red-600/25"
             >
               <WhatsAppIcon className="w-5 h-5" />
               <span>Chat Admin WhatsApp (081284182622)</span>

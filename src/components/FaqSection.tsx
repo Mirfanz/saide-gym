@@ -16,7 +16,7 @@ export default function FaqSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center space-y-4 mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-semibold text-emerald-400">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-semibold text-red-400">
             <SparklesIcon className="w-3.5 h-3.5" />
             <span>Tanya Jawab</span>
           </div>
@@ -51,7 +51,7 @@ export default function FaqSection() {
                   <div
                     className={`w-7 h-7 rounded-full bg-zinc-800 flex items-center justify-center text-zinc-400 flex-shrink-0 transition-transform duration-200 ${
                       isOpen
-                        ? "rotate-180 text-emerald-400 bg-emerald-500/10"
+                        ? "rotate-180 text-red-400 bg-red-500/10"
                         : ""
                     }`}
                   >
@@ -80,9 +80,9 @@ export default function FaqSection() {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-bold text-emerald-400 hover:text-emerald-300 transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-bold text-red-400 hover:text-red-300 transition-colors"
           >
-            <WhatsAppIcon className="w-4 h-4" />
+            <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
             <span>Chat Langsung dengan Admin Saide Gym (081284182622) →</span>
           </a>
         </div>

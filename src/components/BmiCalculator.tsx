@@ -71,12 +71,12 @@ export default function BmiCalculator() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="rounded-2xl sm:rounded-3xl bg-gradient-to-b from-zinc-900 via-zinc-900/90 to-zinc-950 border border-zinc-800 p-5 sm:p-10 shadow-2xl relative overflow-hidden">
           {/* Subtle accent glow */}
-          <div className="absolute top-0 right-0 w-60 sm:w-80 h-60 sm:h-80 bg-emerald-500/10 blur-[90px] pointer-events-none" />
+          <div className="absolute top-0 right-0 w-60 sm:w-80 h-60 sm:h-80 bg-red-600/10 blur-[90px] pointer-events-none" />
 
           <div className="relative">
             {/* Header */}
             <div className="text-center max-w-2xl mx-auto space-y-2 sm:space-y-3">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-[11px] sm:text-xs font-semibold border border-emerald-500/20">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/10 text-red-400 text-[11px] sm:text-xs font-semibold border border-red-500/20">
                 <SparklesIcon className="w-3.5 h-3.5" />
                 Kalkulator Kebugaran Gratis
               </span>
@@ -102,7 +102,7 @@ export default function BmiCalculator() {
                       onClick={() => setGender("male")}
                       className={`h-11 rounded-xl text-xs font-bold transition-all border flex items-center justify-center ${
                         gender === "male"
-                          ? "bg-zinc-800 border-emerald-500 text-emerald-400 shadow-sm"
+                          ? "bg-zinc-800 border-red-500 text-red-400 shadow-sm"
                           : "bg-zinc-950 border-zinc-800 text-zinc-400 hover:text-white"
                       }`}
                     >
@@ -113,7 +113,7 @@ export default function BmiCalculator() {
                       onClick={() => setGender("female")}
                       className={`h-11 rounded-xl text-xs font-bold transition-all border flex items-center justify-center ${
                         gender === "female"
-                          ? "bg-zinc-800 border-emerald-500 text-emerald-400 shadow-sm"
+                          ? "bg-zinc-800 border-red-500 text-red-400 shadow-sm"
                           : "bg-zinc-950 border-zinc-800 text-zinc-400 hover:text-white"
                       }`}
                     >
@@ -136,7 +136,7 @@ export default function BmiCalculator() {
                     required
                     min={100}
                     max={250}
-                    className="w-full h-11 px-3.5 rounded-xl bg-zinc-950 border border-zinc-800 text-white text-sm focus:border-emerald-500 focus:outline-none"
+                    className="w-full h-11 px-3.5 rounded-xl bg-zinc-950 border border-zinc-800 text-white text-sm focus:border-red-500 focus:outline-none"
                   />
                 </div>
 
@@ -154,7 +154,7 @@ export default function BmiCalculator() {
                     required
                     min={30}
                     max={250}
-                    className="w-full h-11 px-3.5 rounded-xl bg-zinc-950 border border-zinc-800 text-white text-sm focus:border-emerald-500 focus:outline-none"
+                    className="w-full h-11 px-3.5 rounded-xl bg-zinc-950 border border-zinc-800 text-white text-sm focus:border-red-500 focus:outline-none"
                   />
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function BmiCalculator() {
               <div className="flex justify-center pt-1">
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-8 h-11 rounded-xl bg-emerald-500 hover:bg-emerald-400 active:bg-emerald-400 text-zinc-950 font-black text-xs sm:text-sm shadow-md shadow-emerald-500/20 transition-all active:scale-[0.98]"
+                  className="w-full sm:w-auto px-8 h-11 rounded-xl bg-red-600 hover:bg-red-500 active:bg-red-500 text-white font-black text-xs sm:text-sm shadow-md shadow-red-600/25 transition-all active:scale-[0.98]"
                 >
                   Hitung Status BMI Saya
                 </button>
@@ -209,14 +209,14 @@ export default function BmiCalculator() {
                       style={{ left: `${result.gaugePercent}%` }}
                     >
                       <div className="w-5 h-5 rounded-full bg-white border-2 border-zinc-950 shadow-xl flex items-center justify-center">
-                        <div className="w-2 h-2 rounded-full bg-emerald-500" />
+                        <div className="w-2 h-2 rounded-full bg-red-500" />
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="space-y-1.5 sm:space-y-2 pt-1">
-                  <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-400 uppercase tracking-wider">
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-red-400 uppercase tracking-wider">
                     <CheckIcon className="w-3.5 h-3.5" />
                     <span>Rekomendasi Program Saide Gym:</span>
                   </div>
@@ -235,9 +235,9 @@ export default function BmiCalculator() {
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-700 text-white font-bold text-xs sm:text-sm border border-zinc-700 transition-all hover:text-emerald-400 min-h-[44px]"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-700 text-white font-bold text-xs sm:text-sm border border-zinc-700 transition-all hover:text-red-400 min-h-[44px]"
                   >
-                    <WhatsAppIcon className="w-4 h-4 text-emerald-400" />
+                    <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
                     <span>Konsultasikan dengan Coach Saide Gym</span>
                   </a>
                 </div>
