@@ -43,6 +43,7 @@ export default function Navbar() {
     { name: "Fasilitas", href: "#fasilitas" },
     { name: "Paket Member", href: "#harga" },
     { name: "Personal Trainer", href: "#harga" },
+    { name: "Kalkulaor BMI", href: "#kalkulator" },
     { name: "Ulasan (4.9⭐)", href: "#testimoni" },
     { name: "Lokasi & Peta", href: "#lokasi" },
     { name: "FAQ", href: "#faq" },
@@ -167,7 +168,7 @@ export default function Navbar() {
               className="w-full py-3 rounded-lg bg-red-600 hover:bg-red-500 text-white font-bold text-center flex items-center justify-center gap-2 shadow-lg shadow-red-600/25"
             >
               <WhatsAppIcon className="w-5 h-5" />
-              <span>Chat Admin WhatsApp (081284182622)</span>
+              <span>Chat Admin WhatsApp</span>
             </a>
           </div>
         </div>

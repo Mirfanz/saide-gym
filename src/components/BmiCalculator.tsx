@@ -262,7 +262,10 @@ export default function BmiCalculator() {
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-700 text-white font-bold text-xs sm:text-sm border border-zinc-700 transition-all hover:text-red-400 min-h-[44px]"
                   >
                     <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
-                    <span>Konsultasikan dengan Coach Saide Gym</span>
+                    <span>
+                      Konsultasikan dengan Coach{" "}
+                      <span className="hidden sm:inline">Saide Gym</span>
+                    </span>
                   </a>
                 </div>
               </div>
