@@ -69,9 +69,10 @@ export default function Hero() {
             {/* Subtitle */}
             <p className="text-sm sm:text-base lg:text-lg text-zinc-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Pusat kebugaran resmi{" "}
-              <strong className="text-white">SAIDE GYM</strong> di Sukaluyu,
-              Karawang. Peralatan lengkap, suasana bersih & ramah pemula, serta
-              didampingi coach berpengalaman dengan tarif paling hemat.
+              <strong className="text-white">SAID&apos;E GYM</strong> di
+              Sukaluyu, Karawang. Peralatan lengkap, suasana bersih & ramah
+              pemula, serta didampingi coach berpengalaman dengan tarif paling
+              hemat.
             </p>
 
             {/* Price highlights pill - Optimized compact grid for mobile */}
@@ -115,7 +116,7 @@ export default function Hero() {
 
               <a
                 href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-                  "Halo Admin Saide Gym Karawang, saya ingin konsultasi program latihan dan tanya info membership.",
+                  "Halo Admin Said'e Gym Karawang, saya ingin konsultasi program latihan dan tanya info membership.",
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -161,7 +162,7 @@ export default function Hero() {
                 <div className="relative h-28 sm:h-36 rounded-xl overflow-hidden -mt-1 -mx-1 border border-zinc-800">
                   <img
                     src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop"
-                    alt="Suasana Latihan di Saide Gym Karawang"
+                    alt="Suasana Latihan di Said'e Gym Karawang"
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
@@ -185,7 +186,7 @@ export default function Hero() {
                     </div>
                     <div>
                       <h2 className="text-base sm:text-lg font-bold text-white">
-                        SAIDE GYM
+                        SAID&apos;E GYM
                       </h2>
                       <p className="text-[11px] sm:text-xs text-zinc-400 flex items-center gap-1">
                         <MapPointWaveIcon className="size-3 mt-0.5 text-red-400" />

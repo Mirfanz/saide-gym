@@ -28,8 +28,8 @@ export default function FaqSection() {
           </h2>
 
           <p className="text-zinc-400 text-base">
-            Semua yang perlu Anda ketahui sebelum memulai latihan di Saide Gym
-            Sukaluyu Karawang.
+            Semua yang perlu Anda ketahui sebelum memulai latihan di Said&apos;e
+            Gym Sukaluyu Karawang.
           </p>
         </div>
 
@@ -76,14 +76,16 @@ export default function FaqSection() {
           </p>
           <a
             href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-              "Halo Admin Saide Gym Karawang, saya mau tanya informasi tentang...",
+              "Halo Admin Said'e Gym Karawang, saya mau tanya informasi tentang...",
             )}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-bold text-red-400 hover:text-red-300 transition-colors"
           >
             <WhatsAppIcon className="w-4 h-4 text-[#25D366] hidden sm:block" />
-            <span>Chat Langsung dengan Admin Saide Gym (081284182622)</span>
+            <span>
+              Chat Langsung dengan Admin Said&apos;e Gym (081284182622)
+            </span>
           </a>
         </div>
       </div>

@@ -34,14 +34,15 @@ export default function MobileStickyBar() {
             <span>Tarif Member</span>
           </div>
           <div className="text-xs font-black text-white">
-            Visit <span className="text-red-400">15K</span> • Bln <span className="text-red-400">115K</span>
+            Visit <span className="text-red-400">15K</span> • Bln{" "}
+            <span className="text-red-400">115K</span>
           </div>
         </div>
 
         {/* Right: Instant WhatsApp Action Button */}
         <a
           href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-            "Halo Admin Saide Gym Karawang, saya mau daftar / tanya jadwal latihan hari ini."
+            "Halo Admin Said'e Gym Karawang, saya mau daftar / tanya jadwal latihan hari ini.",
           )}`}
           target="_blank"
           rel="noopener noreferrer"

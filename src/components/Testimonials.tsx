@@ -23,7 +23,7 @@ export default function Testimonials() {
 
           <p className="text-zinc-400 text-xs sm:text-base lg:text-lg">
             Simak pengalaman langsung para member yang telah merasakan
-            kenyamanan latihan, bimbingan ramah, dan hasil nyata di Saide Gym
+            kenyamanan latihan, bimbingan ramah, dan hasil nyata di Said&apos;e Gym
             Sukaluyu.
           </p>
 

@@ -57,7 +57,7 @@ export default function Facilities() {
           <p className="text-zinc-400 text-xs sm:text-base lg:text-lg">
             Mulai dari pembentukan massa otot (*hypertrophy*), penguatan tenaga
             (*strength*), hingga pembakaran kalori (*fat loss*), semua
-            perlengkapan tersedia lengkap di Saide Gym.
+            perlengkapan tersedia lengkap di Said&apos;e Gym.
           </p>
         </div>
 

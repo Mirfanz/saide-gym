@@ -4,7 +4,11 @@ import React from "react";
  * Official Brand Social Media Vector - WhatsApp
  * Accurate official SVG glyph for Indonesian audience recognition.
  */
-export function WhatsAppIcon({ className = "w-5 h-5" }: { className?: string }) {
+export function WhatsAppIcon({
+  className = "w-5 h-5",
+}: {
+  className?: string;
+}) {
   return (
     <svg
       className={className}
@@ -20,7 +24,11 @@ export function WhatsAppIcon({ className = "w-5 h-5" }: { className?: string }) 
 /**
  * Official Brand Social Media Vector - Instagram
  */
-export function InstagramIcon({ className = "w-5 h-5" }: { className?: string }) {
+export function InstagramIcon({
+  className = "w-5 h-5",
+}: {
+  className?: string;
+}) {
   return (
     <svg
       className={className}
@@ -70,59 +78,32 @@ export function SaideGymLogo({
   return (
     <svg
       className={className}
-      viewBox="0 0 32 32"
+      width="512"
+      height="512"
+      viewBox="0 0 512 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      aria-label="Logo SAIDE GYM"
     >
       <path
-        d="M16 2L29 9.5V22.5L16 30L3 22.5V9.5L16 2Z"
+        d="M256 32L464 152V360L256 480L48 360V152L256 32Z"
         fill={variant === "duo" ? "#DC2626" : "currentColor"}
       />
       <path
-        d="M16 4.5L26.5 10.5V21.5L16 27.5L5.5 21.5V10.5L16 4.5Z"
+        d="M256 72L424 168V344L256 440L88 344V168L256 72Z"
         fill={variant === "duo" ? "#991B1B" : "rgba(0,0,0,0.25)"}
       />
       <path
-        d="M22 8H12L10 13H18.5C19.05 13 19.5 13.45 19.5 14V14.5C19.5 15.05 19.05 15.5 18.5 15.5H13C11.34 15.5 10 16.84 10 18.5V20C10 21.66 11.34 23 13 23H23L25 18H16.5C15.95 18 15.5 17.55 15.5 17V16.5C15.5 15.95 15.95 15.5 16.5 15.5H22C23.66 15.5 25 14.16 25 12.5V11C25 9.34 23.66 8 22 8Z"
+        d="M184 136H344L376 216H240C231.2 216 224 223.2 224 232V240C224 248.8 231.2 256 240 256H328C354.56 256 376 277.44 376 304V328C376 354.56 354.56 376 328 376H168L136 296H272C280.8 296 288 288.8 288 280V272C288 263.2 280.8 256 272 256H184C157.44 256 136 234.56 136 208V184C136 157.44 157.44 136 184 136Z"
         fill={variant === "duo" ? "#FFFFFF" : "#09090B"}
       />
-      <circle cx="16" cy="6.75" r="1.1" fill={variant === "duo" ? "#FFFFFF" : "#09090B"} />
-      <circle cx="16" cy="25.25" r="1.1" fill={variant === "duo" ? "#FFFFFF" : "#09090B"} />
-    </svg>
-  );
-}
-
-/**
- * SAIDE GYM Freestanding Monogram (Interlocking Power Plates)
- * Minimalist geometric glyph forming an S from two heavy interlocking weights.
- */
-export function SaideGymMark({
-  className = "w-6 h-6",
-  color1 = "#EF4444",
-  color2 = "#FFFFFF",
-}: {
-  className?: string;
-  color1?: string;
-  color2?: string;
-}) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label="Mark SAIDE GYM"
-    >
       <path
-        d="M7 6H23C24.6569 6 26 7.34315 26 9V11C26 12.6569 24.6569 14 23 14H16L21 18H15L9 13.5C7.8 12.5 7 11.2 7 9.8V6Z"
-        fill={color1}
+        d="M255.6 125.6C265.32 125.6 273.2 117.72 273.2 108C273.2 98.2798 265.32 90.4 255.6 90.4C245.88 90.4 238 98.2798 238 108C238 117.72 245.88 125.6 255.6 125.6Z"
+        fill={variant === "duo" ? "#FFFFFF" : "#09090B"}
       />
       <path
-        d="M25 26H9C7.34315 26 6 24.6569 6 23V21C6 19.3431 7.34315 18 9 18H16L11 14H17L23 18.5C24.2 19.5 25 20.8 25 22.2V26Z"
-        fill={color2}
+        d="M256 421.6C265.72 421.6 273.6 413.72 273.6 404C273.6 394.28 265.72 386.4 256 386.4C246.28 386.4 238.4 394.28 238.4 404C238.4 413.72 246.28 421.6 256 421.6Z"
+        fill={variant === "duo" ? "#FFFFFF" : "#09090B"}
       />
-      <circle cx="16" cy="16" r="1.75" fill={color1} />
     </svg>
   );
 }

@@ -88,11 +88,12 @@ export default function Navbar() {
         <a href="#hero" className="flex items-center gap-3 group">
           <div className="relative w-10 h-10 flex items-center justify-center group-hover:scale-105 transition-transform flex-shrink-0">
             <div className="absolute -inset-1 bg-red-600/30 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity" />
-            <SaideGymLogo className="w-10 h-10 drop-shadow-md relative z-10" />
+            <SaideGymLogo className="size-10 drop-shadow-md relative z-10" />
+            {/* <SaideGymLogo className="size-10 drop-shadow-md relative z-10" /> */}
           </div>
           <div>
             <span className="text-xl font-black tracking-wider text-white flex items-center gap-1">
-              SAIDE <span className="text-red-500">GYM</span>
+              SAID&apos;E <span className="text-red-500">GYM</span>
             </span>
             <span className="block text-[10px] tracking-widest text-zinc-400 uppercase -mt-1">
               Karawang Fitness
@@ -117,7 +118,7 @@ export default function Navbar() {
         <div className="hidden sm:flex items-center gap-3">
           <a
             href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-              "Halo Admin Saide Gym Karawang, saya ingin tanya info membership dan latihan hari ini.",
+              "Halo Admin Said'e Gym Karawang, saya ingin tanya info membership dan latihan hari ini.",
             )}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -161,7 +162,7 @@ export default function Navbar() {
           <div className="pt-3 border-t border-zinc-800 flex flex-col gap-2">
             <a
               href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-                "Halo Admin Saide Gym Karawang, saya ingin info pendaftaran member.",
+                "Halo Admin Said'e Gym Karawang, saya ingin info pendaftaran member.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"

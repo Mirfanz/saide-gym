@@ -63,7 +63,7 @@ export default function BmiCalculator() {
       cat = "Kategori Obesitas (Obese)";
       col = "text-rose-400";
       adv =
-        "Sangat disarankan memulai latihan bertahap dengan bimbingan Coach Saide Gym agar gerakan aman untuk sendi dan program kardio terukur.";
+        "Sangat disarankan memulai latihan bertahap dengan bimbingan Coach Said'e Gym agar gerakan aman untuk sendi dan program kardio terukur.";
       workout = "Guided Low-Impact Fat Loss & Mobility";
     }
 
@@ -96,7 +96,7 @@ export default function BmiCalculator() {
               </h2>
               <p className="text-xs sm:text-sm text-zinc-400">
                 Ketahui status komposisi tubuh Anda secara instan dan dapatkan
-                rekomendasi bimbingan latihan di Saide Gym.
+                rekomendasi bimbingan latihan di Said&apos;e Gym.
               </p>
             </div>
 
@@ -255,7 +255,7 @@ export default function BmiCalculator() {
                 <div className="pt-2 flex justify-center sm:justify-start">
                   <a
                     href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-                      `Halo Coach Saide Gym, saya baru cek BMI di website dengan hasil ${result.bmi} (${result.category}). Saya tertarik konsultasi program latihan "${result.targetWorkout}".`,
+                      `Halo Coach Said'e Gym, saya baru cek BMI di website dengan hasil ${result.bmi} (${result.category}). Saya tertarik konsultasi program latihan "${result.targetWorkout}".`,
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -264,7 +264,7 @@ export default function BmiCalculator() {
                     <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
                     <span>
                       Konsultasikan dengan Coach{" "}
-                      <span className="hidden sm:inline">Saide Gym</span>
+                      <span className="hidden sm:inline">Said&apos;e Gym</span>
                     </span>
                   </a>
                 </div>

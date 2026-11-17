@@ -5,12 +5,7 @@ import { WalletMoneyIcon } from "@solar-icons/react/bold-duotone/wallet-money";
 import { MapPointIcon } from "@solar-icons/react/linear/map-point";
 import { ClockCircleIcon } from "@solar-icons/react/linear/clock-circle";
 import { PhoneCallingIcon } from "@solar-icons/react/linear/phone-calling";
-import {
-  InstagramIcon,
-  TikTokIcon,
-  WhatsAppIcon,
-  SaideGymLogo,
-} from "./Icons";
+import { InstagramIcon, TikTokIcon, WhatsAppIcon, SaideGymLogo } from "./Icons";
 
 export default function Footer() {
   return (
@@ -23,15 +18,15 @@ export default function Footer() {
               Siap Memulai Hari Ini?
             </h3>
             <p className="text-sm text-zinc-300">
-              Datang langsung ke Saide Gym Sukaluyu Karawang atau hubungi admin
-              via WhatsApp.
+              Datang langsung ke Said&apos;e Gym Sukaluyu Karawang atau hubungi
+              admin via WhatsApp.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-                "Halo Admin Saide Gym Karawang, saya ingin mendaftar member hari ini.",
+                "Halo Admin Said'e Gym Karawang, saya ingin mendaftar member hari ini.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -64,7 +59,7 @@ export default function Footer() {
                 <SaideGymLogo className="w-10 h-10 drop-shadow-md" />
               </div>
               <span className="text-2xl font-black text-white tracking-wider">
-                SAIDE <span className="text-red-500">GYM</span>
+                SAID&apos;E <span className="text-red-500">GYM</span>
               </span>
             </div>
 
@@ -86,7 +81,7 @@ export default function Footer() {
                 href={GYM_INFO.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Instagram Saide Gym"
+                aria-label="Instagram Said'e Gym"
                 className="w-10 h-10 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-pink-400 flex items-center justify-center border border-zinc-800 transition-colors"
               >
                 <InstagramIcon className="w-5 h-5" />
@@ -96,7 +91,7 @@ export default function Footer() {
                 href={GYM_INFO.tiktokUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="TikTok Saide Gym"
+                aria-label="TikTok Said'e Gym"
                 className="w-10 h-10 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white flex items-center justify-center border border-zinc-800 transition-colors"
               >
                 <TikTokIcon className="w-5 h-5" />
@@ -106,7 +101,7 @@ export default function Footer() {
                 href={`https://wa.me/${GYM_INFO.phoneIntl}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="WhatsApp Saide Gym"
+                aria-label="WhatsApp Said'e Gym"
                 className="w-10 h-10 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-red-400 flex items-center justify-center border border-zinc-800 transition-colors"
               >
                 <WhatsAppIcon className="w-5 h-5" />
@@ -116,7 +111,7 @@ export default function Footer() {
                 href={GYM_INFO.linktreeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Linktree Saide Gym"
+                aria-label="Linktree Said'e Gym"
                 className="px-3 py-2 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-xs font-bold text-zinc-300 hover:text-red-400 flex items-center justify-center border border-zinc-800 transition-colors"
               >
                 Linktree
@@ -179,10 +174,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#faq"
-                  className="hover:text-red-400 transition-colors"
-                >
+                <a href="#faq" className="hover:text-red-400 transition-colors">
                   Tanya Jawab (FAQ)
                 </a>
               </li>
@@ -253,7 +245,7 @@ export default function Footer() {
 
         {/* Bottom copyright */}
         <div className="mt-12 pt-8 border-t border-zinc-900 text-center text-xs text-zinc-500 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© 2026 SAIDE GYM Karawang. Semua hak cipta dilindungi.</p>
+          <p>© 2026 SAID&apos;E GYM Karawang. Semua hak cipta dilindungi.</p>
           <p className="text-[11px] text-zinc-600">
             Dibuat untuk memajukan komunitas olahraga sehat Karawang.
           </p>

@@ -25,7 +25,7 @@ export default function LocationSection() {
             <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
               Kunjungi Langsung{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-rose-400">
-                SAIDE GYM Karawang
+                SAID&apos;E GYM Karawang
               </span>
             </h2>
 
@@ -108,7 +108,7 @@ export default function LocationSection() {
             <div className="rounded-3xl bg-zinc-900 border border-zinc-800 p-3 sm:p-4 shadow-2xl overflow-hidden">
               <div className="relative w-full h-[360px] sm:h-[420px] rounded-2xl overflow-hidden bg-zinc-950 border border-zinc-800/80">
                 <iframe
-                  title="Peta Lokasi Saide Gym Karawang"
+                  title="Peta Lokasi Said'e Gym Karawang"
                   src="https://maps.google.com/maps?q=Saide+Gym+Sukaluyu+Karawang&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
@@ -126,7 +126,9 @@ export default function LocationSection() {
                   <div className="flex items-center gap-3">
                     <SaideGymLogo className="w-8 h-8 flex-shrink-0 drop-shadow-sm" />
                     <div>
-                      <p className="text-xs font-bold text-white">SAIDE GYM</p>
+                      <p className="text-xs font-bold text-white">
+                        SAID&apos;E GYM
+                      </p>
                       <p className="text-[10px] text-zinc-400">
                         Jl. Kalikalapa RT 06/03 Sukaluyu
                       </p>

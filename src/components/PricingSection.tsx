@@ -219,7 +219,7 @@ export default function PricingSection() {
           <div className="flex-shrink-0 flex items-center gap-3">
             <a
               href={`https://wa.me/${GYM_INFO.phoneIntl}?text=${encodeURIComponent(
-                "Halo Coach Saide Gym, saya mau tanya rekomendasi paket latihan yang cocok untuk pemula.",
+                "Halo Coach Said'e Gym, saya mau tanya rekomendasi paket latihan yang cocok untuk pemula.",
               )}`}
               target="_blank"
               rel="noopener noreferrer"
