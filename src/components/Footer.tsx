@@ -245,7 +245,12 @@ export default function Footer() {
 
         {/* Bottom copyright */}
         <div className="mt-12 pt-8 border-t border-zinc-900 text-center text-xs text-zinc-500 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© 2026 SAID&apos;E GYM Karawang. Semua hak cipta dilindungi.</p>
+          <p>
+            © 2026 By{" "}
+            <a href={"https://instagram.com/mirfan.project"} target="_blank">
+              Mirfan.Project
+            </a>
+          </p>
           <p className="text-[11px] text-zinc-600">
             Dibuat untuk memajukan komunitas olahraga sehat Karawang.
           </p>
